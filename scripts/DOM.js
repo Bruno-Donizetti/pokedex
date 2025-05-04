@@ -28,6 +28,8 @@ export const blocoTipo2 = document.getElementById("blocoTipo2");
 export const iconeTipo1 = document.getElementById("iconeTipo1");
 export const iconeTipo2 = document.getElementById("iconeTipo2");
 
+export const seta = document.querySelectorAll("seta")
+
 export const descricao = document.getElementById("textoDescricao");
 
 export const container = document.getElementById("container");

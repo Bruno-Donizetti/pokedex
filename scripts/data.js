@@ -8,6 +8,7 @@ const urlDescricao = "https://pokeapi.co/api/v2/pokemon-species/";
 let shiny = {
     isShiny: false
 };
+
 let spritesShiny = [null,null]
 
 //retorna os dados
@@ -94,12 +95,12 @@ export async function atualizarDados(pokemon) {
 
     // Muda o primeiro tipo e se existir mais um, muda tbm
     dom.blocoTipo1.style.backgroundColor = corPrimaria;
-    dom.iconeTipo1.setAttribute("src", `/imagens/iconesTipos/${tipos[0]}.svg`);
+    dom.iconeTipo1.setAttribute("src", `imagens/iconesTipos/${tipos[0]}.svg`);
     
     if (tipos.length > 1) {
         dom.blocoTipo2.style.display = "flex";
         dom.blocoTipo2.style.backgroundColor = corSecundaria;
-        dom.iconeTipo2.setAttribute("src", `/imagens/iconesTipos/${tipos[1]}.svg`);
+        dom.iconeTipo2.setAttribute("src", `imagens/iconesTipos/${tipos[1]}.svg`);
     }else{
         dom.blocoTipo2.style.display = "none";
     }
@@ -134,9 +135,20 @@ export function alterarSprite() {
     );
 }
 
-//Pega o ultimo dado que contenha a linguagem en
-//A função vai receber os dados como parametro
-//Percorre o array da ultima posição pra primeira
-//Quando acha com a linguagem que eu quero retorna apenas a descrição
+//altera os Pokemons com a seta
+
+export function alterarPokemon(n) {
+    let url = new URL(window.location.href);
+    
+    let novoPokemon = parseInt(url.searchParams.get("pokemon"));
+
+    novoPokemon += parseInt(n);
+    
+    if (novoPokemon >= 1 && novoPokemon <= 1025) {
+        url.searchParams.set("pokemon", novoPokemon);
+        
+        window.location.href = url;
+    }
+}
 
 export { shiny };

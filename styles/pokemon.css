@@ -45,13 +45,41 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
 }
 
-/* #region topo */
+/* #region AreaNome */
+
+.areaNome{
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 3%;
+}
+
+.seta{
+    background: none;
+    border: none;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :hover{
+        cursor: pointer;
+    }
+}
 
 #nome{
     text-align: center;
     font-size: 27px;
-    padding-bottom: 28px;
+
+    margin: 0 3%;
 }
+
+/* #endregion */
+
+
+/* #region topo */
 
 hr{
     background-color: #7E6BE5;

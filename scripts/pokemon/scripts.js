@@ -22,4 +22,12 @@ await data.atualizarDados(pokemon);
 dom.btShiny.addEventListener("click", function() {
     data.shiny.isShiny = !data.shiny.isShiny;
     data.alterarSprite();
-})
+});
+
+//adiciona um evento para cada elemento com a classe .seta
+
+document.querySelectorAll(".seta").forEach(botao => {
+    botao.addEventListener("click", () => {
+        data.alterarPokemon(botao.value);
+    })
+});
