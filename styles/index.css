@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Lexend;
+    src: url("fonts/Lexend-Regular.ttf");
+}
+
+/* variaveis */
+:root{
+    --shadow-default: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    
+    background: #161421 url("/imagens/pokebolaBG.svg");
+    
+    font-family: Lexend;
+    color: white;
+}
+/* #region titulo */
+#titulo{
+    display: flex;
+    justify-content: center;
+
+    margin: 3% 0px;
+
+    filter: drop-shadow(var(--shadow-default));
+
+    & a{
+        padding: 0px 20px;
+
+        margin: auto 0;
+
+        font-size: 32px;
+        font-weight: normal;
+
+        color: white;
+
+        vertical-align: middle;
+    }
+}
+
+/* #endregion */
+
+.container{
+    width: 65%;
+
+    margin: 0 auto;
+
+    background-color: #2C294D;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+#grid{
+    padding: 5% 10%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    justify-content: space-between;
+}
+
+/* #region blocoPokemon */
+
+.blocoPokemon{
+    display: inline-block;
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 40px;
+    filter: drop-shadow(var(--shadow-default));
+}
+
+.blocoPokemon a{
+    color: white;
+    font-size: 20px;
+
+}
+
+.blocoPokemon span{
+    font-size: 25px;
+    margin: 0px;
+}
+
+.baseSprite{
+    display: flex;
+
+    width: 150px;
+    height: 150px;
+
+    background-color: #B4AED4;
+
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.sprite{
+    width: 90%;
+    image-rendering: pixelated;
+    /* fallback */
+    image-rendering: crisp-edges;
+
+    filter: drop-shadow(var(--shadow-default));
+}
+
+.baseSprite:hover{
+    .sprite{
+        transition: width 500ms ease-in-out;
+        width: 100%;
+    }
+}
+
+.baseSprite:not(:hover){
+    .sprite{
+        transition: width 500ms ease-in-out;
+        width: 90%;
+    }
+}
+
+/* #endregion */
+
+/* #region botao */
+
+.buttonArea{
+    text-align: center;
+}
+
+#btCarregar{
+    background-color: #7E6BE5;
+
+    border: none;
+    outline: none;
+
+    color: white;
+    font-size: 30px;
+
+    padding: 20px 80px;
+    margin-bottom: 70px;
+
+    border-radius: 15px;
+
+    text-shadow: var(--shadow-default);
+    box-shadow: var(--shadow-default);
+}
+
+#btCarregar:hover{
+    cursor: pointer;
+}
+
+/* #endregion */

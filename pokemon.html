@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/pokemon.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nome">Pokemon</div>
+        <hr>
+        <div class="topo">
+            <div class="baseImagem">
+                <div id="imagem">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="imagemPokemon" id="sprite" width="200px">
+                </div>
+                <br>
+                <button id="btShiny"><img src="imagens/iconShiny.svg" alt="icone shiny" id="iconeShiny"></button>
+            </div>
+            <div class="stats">
+                <div class="blocoStats"><span id="hp" class="spanStats">HP 10</span>
+                    <div class="baseStats">
+                        <div class="barraStats" id="barraHP"></div>
+                    </div>
+                </div>
+                <div class="blocoStats"><span id="attack" class="spanStats">Attack  10</span>
+                    <div class="baseStats">
+                        <div class="barraStats" id="barraAttack"></div>
+                    </div>
+                </div>
+                <div class="blocoStats"><span id="defense" class="spanStats">Defense 10</span>
+                    <div class="baseStats">
+                        <div class="barraStats" id="barraDefense"></div>
+                    </div>
+                </div>
+                <div class="blocoStats"><span id="spAttack" class="spanStats">Sp. Attack 10</span>
+                    <div class="baseStats">
+                        <div class="barraStats" id="barraSpAttack"></div>
+                    </div>
+                </div>
+                <div class="blocoStats"><span id="spDefense" class="spanStats">Sp. Defense 10</span>
+                    <div class="baseStats">
+                        <div class="barraStats" id="barraSpDefense"></div>
+                    </div>
+                </div>
+                <div class="blocoStats"><span id="speed" class="spanStats">Speed 10</span>
+                    <div class="baseStats">
+                        <div class="barraStats" id="barraSpeed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="hrBaixo">
+
+        <div class="baixo">
+            
+            <div class="tipos">
+                <h2>Tipos</h2>
+                <div class="blocoTipo" id="blocoTipo1">
+                        <img src="imagens/iconesTipos/grass.svg" alt="" width="40px" id="iconeTipo1">
+                        <div id="tipo1">Grass</div>
+                </div>
+                <div class="blocoTipo" id="blocoTipo2">
+                        <img src="imagens/iconesTipos/poison.svg" alt="" width="40px" id="iconeTipo2">
+                        <div id="tipo2">Poison</div>
+                </div>
+            </div>
+
+            <div class="descricao">
+                <h2>Descricao</h2>
+                <p id="textoDescricao">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tenetur eveniet laborum ducimus voluptates, accusamus ratione perspiciatis. Laborum inventore impedit aspernatur pariatur, nihil officiis ea assumenda voluptate, architecto eius eos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/pokemon/scripts.js"></script>
+</body>
+
+</html>

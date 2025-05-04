@@ -1,0 +1,243 @@
+@font-face {
+    font-family: lexend;
+    src: url(/fonts/Lexend-Regular.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: lexend;
+
+    
+}
+
+body{
+    background: #161421 url("/imagens/pokebolaBG.svg");
+    color: white;
+}
+
+.cores{
+    color: #161421;
+    color: #2C294D;
+    color: #7E6BE5;
+    color: #B4AED4;
+}
+
+#container{
+    /* display none para que a pagina só carregue após o js atualizar os dados */
+    display: none;
+    
+    /* posição*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    /* Cor de fundo */
+    background-color: #2C294D;
+    
+    /* bordas */
+    border-radius: 25px;
+    
+    /*  paddin*/
+    padding: 27px 30px;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+/* #region topo */
+
+#nome{
+    text-align: center;
+    font-size: 27px;
+    padding-bottom: 28px;
+}
+
+hr{
+    background-color: #7E6BE5;
+    height: 3px;
+
+    border:  none;
+}
+
+.topo{
+    display: flex;
+    margin: 5% 0px;
+}
+
+#imagem{
+    /* posicionamento */
+    display: inline-block;
+
+    /* fundo */
+    background-color: #B4AED4;
+    
+    /* borda */
+    outline: 6px black solid;
+    border-radius: 15px;
+
+}
+
+#btShiny{
+    /* borda */
+    border: none;
+    border-radius: 20px;
+
+    /* posicionamento */
+    position: relative;
+    top: -18px;
+    left: 50%;
+    transform: translate(-50%);
+
+    /* cores */
+    color: white;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+
+    :hover{
+        cursor: pointer;
+    }
+}
+
+#iconeShiny{
+    width: 100%;
+}
+
+.baseImagem{
+    display: inline-block;
+}
+
+.stats{
+    display: block;
+    width: 100%;
+}
+
+.blocoStats{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.spanStats{
+    width: 50%;
+    text-align: right;
+    color: #FFF;
+}
+
+.spanStats:hover{
+    cursor: default;
+    color: #7E6BE5;
+}
+
+.baseStats{
+    background-color:#B4AED4;
+
+    width: 60%;
+
+    margin-left: 10%;
+
+    /* bordas */
+    border-radius: 20px;
+}
+
+.barraStats{
+    width: 25%;
+    background-color:#7E6BE5 ;
+    height: 100%;
+
+    border-radius: 25px;
+}
+
+/* #endregion */
+
+
+/* #region parteBaixa */
+
+.baixo{
+    margin-top: 5%;
+}
+
+#hrBaixo{
+    /* por conta do btShiny */
+    margin-top: -30px;
+}
+
+/* #region tipos */
+
+
+.baixo{
+    display: flex;
+}
+
+.tipos{
+    width: 50%;
+    height: 200px;
+
+    color: black;
+    font-size: 18px;
+    text-align: center;
+
+    margin-right: 10%;
+
+    & h2{
+        color: white;
+        margin-bottom: 20%;
+    }
+}
+
+.blocoTipo{
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+    border-radius: 25px;
+
+    background-color: aliceblue;
+
+    margin-bottom: 10%;
+}
+
+#tipo1, #tipo2{
+    display: grid;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+#blocoTipo1{
+    background-color: #63BB5B;
+}
+
+#blocoTipo2{
+    background-color: #AB6AC8;
+}
+
+/* #endregion */
+
+
+/* #region descricao */
+
+.descricao{
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+
+#textoDescricao{
+    margin-top: 5%;
+
+    text-align: justify;
+
+    font-size: 18px;
+}
+
+/* #endregion */
+/* #endregion */
+
+.topo, .baixo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
